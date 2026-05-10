@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Smart Problem Picker",
+  "version": "1.0",
+  "description": "Picks a random unsolved problem from recent contests based on rating or division.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://codeforces.com/",
+        "*://codeforces.com/?*",
+        "*://codeforces.com/page/*",
+        "*://codeforces.com/index.php*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
