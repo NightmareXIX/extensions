@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Tag & Rating Revealer",
+  "version": "1.0",
+  "description": "Adds a floating box to toggle problem rating and tags on Codeforces via API.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://codeforces.com/contest/*/problem/*",
+        "*://codeforces.com/problemset/problem/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
