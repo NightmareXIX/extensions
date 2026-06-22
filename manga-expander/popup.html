@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      margin: 0;
+    }
+    h3 { margin-top: 0; font-size: 15px; font-weight: normal; margin-bottom: 5px; }
+    .slider-container { margin-bottom: 15px; }
+    input[type="range"] { width: 100%; cursor: pointer; }
+    .value-display { font-size: 20px; font-weight: bold; color: #4CAF50; }
+    .divider { border-bottom: 1px solid #444; margin: 15px 0; }
+  </style>
+</head>
+<body>
+  <h3>Wide Spread Width</h3>
+  <div class="slider-container">
+    <span class="value-display" id="wideValue">80</span>%
+    <input type="range" id="wideSlider" min="40" max="100" value="80">
+  </div>
+
+  <div class="divider"></div>
+
+  <h3>Vertical Panel Width</h3>
+  <div class="slider-container">
+    <span class="value-display" id="verticalValue">50</span>%
+    <input type="range" id="verticalSlider" min="20" max="100" value="50">
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

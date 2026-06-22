@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Manga Spread Expander",
+  "version": "1.2",
+  "description": "Adjusts widths of wide and vertical manga panels.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Adjust Panel Size"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.mangadot.net/*",
+        "*://*.mangakakalot.gg/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
